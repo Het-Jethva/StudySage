@@ -71,7 +71,7 @@ function App() {
     })
 
     eventSource.current = new EventSource(
-      `http://localhost:8000/chat-stream?${params}`
+      `${import.meta.env.VITE_BACKEND_ENDPOINT}chat-stream?${params}`
     )
     let currentResponse = ""
 
