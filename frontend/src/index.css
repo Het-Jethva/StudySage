@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  .prose {
+    max-width: none;
+  }
+
+  .prose pre {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+  }
+
+  .prose code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    font-size: 0.875em;
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .prose img {
+    margin: 1em 0;
+    border-radius: 0.5em;
+  }
+
+  .prose-invert {
+    color: white;
+  }
+
+  .prose-invert a {
+    color: #93c5fd;
+  }
+
+  .prose-invert code {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
